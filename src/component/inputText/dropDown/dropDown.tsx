@@ -3,10 +3,7 @@ import { Typography } from "../../../typography/typography";
 import { Icon } from "../../Icons/Icon";
 import s from "./dropDown.module.scss";
 
-type Props = {};
-
-export const DropDownTooltip = (Props: Props) => {
-  const {} = Props;
+export const DropDownTooltip = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleTooltip = () => {
