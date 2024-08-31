@@ -1,4 +1,4 @@
-import React, { useId, useState } from "react";
+import React, { useId } from "react";
 import { Icon } from "../Icons/Icon";
 import s from "./input.module.scss";
 import clsx from "clsx";
@@ -21,7 +21,7 @@ export type SuperInputTextPropsType = {
   after?: boolean;
   before?: boolean;
   classNameInput?: string;
-  dark?:boolean
+  dark?: boolean;
 };
 
 export const TextField = (props: SuperInputTextPropsType) => {
@@ -35,7 +35,6 @@ export const TextField = (props: SuperInputTextPropsType) => {
     info,
     showBorder,
     helper,
-    variant = "normal",
     error,
     texthelper,
     after,
@@ -53,7 +52,12 @@ export const TextField = (props: SuperInputTextPropsType) => {
     <div className={s.Contaner}>
       <div className={s.emailWrapper}>
         {label && (
-          <Typography className={clsx(s.label, {[s.darkTmeme]: dark})} variant="regular16" as="label" htmlFor={finalId}>
+          <Typography
+            className={clsx(s.label, { [s.darkTmeme]: dark })}
+            variant="regular16"
+            as="label"
+            htmlFor={finalId}
+          >
             {label}
           </Typography>
         )}
@@ -63,7 +67,13 @@ export const TextField = (props: SuperInputTextPropsType) => {
           </div>
         )}
       </div>
-      <div className={clsx(s.inputWrapper, { [s.border]: showBorder, [s.inputError]: (error && err), [s.darkTmeme]: dark })}>
+      <div
+        className={clsx(s.inputWrapper, {
+          [s.border]: showBorder,
+          [s.inputError]: error && err,
+          [s.darkTmeme]: dark,
+        })}
+      >
         {error && err ? (
           <Icon
             className={classes.icon}
@@ -80,7 +90,7 @@ export const TextField = (props: SuperInputTextPropsType) => {
           ></Icon>
         )}
         <input
-          className={clsx(classes.input, {[s.darkTmeme]: dark})}
+          className={clsx(classes.input, { [s.darkTmeme]: dark })}
           id={finalId}
           type={type}
           value={value}
@@ -111,7 +121,7 @@ export const TextField = (props: SuperInputTextPropsType) => {
           variant="regular14"
           as="span"
           id={`${id}-helper`}
-          className={clsx(s.ThemeHelper, {[s.darkThemeHelper]: dark})}
+          className={clsx(s.ThemeHelper, { [s.darkThemeHelper]: dark })}
         >
           {texthelper}
         </Typography>
