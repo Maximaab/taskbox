@@ -47,7 +47,7 @@ export const TextField = (props: SuperInputTextPropsType) => {
     input: clsx(s.input, error && s.error, classNameInput),
     icon: clsx(error && s.errorIcon, classNameInput),
   };
-
+  console.log(classes);
   return (
     <div className={s.Contaner}>
       <div className={s.emailWrapper}>
