@@ -1,0 +1,23 @@
+.inputWrapper {
+    margin-bottom: 15px;
+  }
+  
+  .required {
+    color: red; 
+  }
+  
+  .optional {
+    color: gray; 
+    font-size: 12px; 
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input:focus {
+    border-color: #007bff; 
+  }

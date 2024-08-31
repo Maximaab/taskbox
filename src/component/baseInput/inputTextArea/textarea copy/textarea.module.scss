@@ -1,0 +1,38 @@
+.textarea {
+  cursor: pointer;
+  resize: none;
+
+  padding: 10px;
+
+  background-color: white;
+  border: 1px solid #d1d1d6;
+  border-radius: 4%;
+
+  &:focus {
+    border: 1px solid #d1d1d6;
+    outline: none;
+  }
+
+  &:active {
+    border: 1px solid #d1d1d6;
+  }
+
+  &:hover {
+    border: 1px solid #d1d1d6;
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    border: 1px solid #d1d1d6;
+  }
+}
+
+.error {
+  border: 1px solid #d1d1d6;
+}
+
+.reverse {
+  direction: rtl;
+  text-align: right;
+}

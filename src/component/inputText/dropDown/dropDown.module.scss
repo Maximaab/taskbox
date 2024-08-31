@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+.leftWidth {
+  position: relative;
+  
+}
+.ToltipWrapper {
+  position: relative;
+  left: -55px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.IconWrapper {
+  padding-top: 6px;
+}
+.leftDiv {
+  width: 20px;
+}
+.text {
+  position: relative;
+  height: 20px;
+  background-color: #131316;
+  color: #fff;
+  line-height: 20px;
+  padding: 10px;
+  border: 0 solid #131316;
+  border-radius: 8px;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 0s,
+    opacity 0.2s linear;
+}
+.text::before {
+  border: 1.2px solid #131316;
+  content: "";
+  position: absolute;
+  top: 29.6px;
+  left: 52px;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  height: 14px;
+  width: 14px;
+  background-color: #131316;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+.text.visible {
+  visibility: visible;
+  opacity: 1;
+}

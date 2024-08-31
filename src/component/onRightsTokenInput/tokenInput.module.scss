@@ -1,0 +1,144 @@
+.PageWrapper {
+  display: flex;
+  text-align: center;
+  padding-left: 4px;
+}
+
+.inputWrapper {
+  position: relative;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  height: 24px;
+  padding: 6px 12px;
+
+  width: 64px;
+
+  background: white;
+}
+.border {
+  border: 1px solid #d1d1d6;
+  border-radius: 4px;
+}
+.emailWrapper {
+  display: flex;
+  text-align: center;
+  width: 168px;
+  height: 20px;
+}
+
+.input {
+  flex-grow: 1;
+
+  box-sizing: border-box;
+
+  font-size: 16px;
+  color: black;
+
+  background: #fff;
+  border: 0 solid #d1d1d6;
+  outline: none;
+  width: 50px;
+}
+
+.input:active::placeholder {
+  color: rgb(255 255 255);
+}
+
+.input::placeholder {
+  font-size: 14px;
+}
+
+.inputWrapper:disabled {
+  box-sizing: border-box;
+  border-color: rgb(76 76 76);
+  border-radius: 2px;
+  outline: none;
+}
+
+.inputWrapper:hover {
+  box-sizing: border-box;
+  border-color: rgb(128 128 128);
+  border-radius: 2px;
+  outline: none;
+}
+
+.inputWrapper:active {
+  box-sizing: border-box;
+  border-color: rgb(255 255 255);
+  border-radius: 2px;
+}
+
+.inputWrapper:focus {
+  box-sizing: border-box;
+  border-color: #84caff;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+.inputWrapper:focus-within {
+  box-sizing: border-box;
+  border-color: #84caff;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+.inputError {
+  box-sizing: border-box;
+  border-color: #d92d20;
+  border-radius: 4px;
+  outline: none;
+}
+
+.inputError:focus {
+  box-sizing: border-box;
+  border-color: #d92d20;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 77, 79, 0.25);
+}
+
+.inputError:focus-within {
+  box-sizing: border-box;
+  border-color: #d92d20;
+  border-radius: 4px;
+  transition:
+    border-color 0.2s,
+    border-width 0.2s;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 77, 79, 0.25);
+}
+
+.label {
+  font-size: 12px;
+  color: rgb(128 128 128);
+}
+
+.error {
+  font-size: 12px;
+  color: rgb(242 61 97);
+}
+
+.search {
+  margin-right: 5px;
+}
+
+.icon {
+}
+
+.iconWrapper {
+  width: 50;
+  height: 50;
+}
+
+.infoIconWrapper {
+  padding-left: 4px;
+}
